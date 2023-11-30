@@ -1,0 +1,11 @@
+.sombra {
+  text-shadow: 2px 2px 5px green;
+}
+
+hr {
+  height: 4px;
+  border: none;
+  background-color: purple;
+  width: 50%;
+  margin: auto;
+}

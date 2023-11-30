@@ -11,6 +11,8 @@ function Conteudo() {
           saepe sed voluptatum.
           Commodi cumque eaque earum facere itaque nihil porro?</p>
 
+        <hr/>
+
         {/* Reaproveitamento de Componentes */}
         <Artigo />
         <Artigo />
