@@ -1,12 +1,11 @@
+import Menu from './Menu.jsx';
+
 function Cabecalho() {
   return(
     <header>
       <h1>Olá React </h1>
-      <nav>
-        <a href="">Home</a>
-        <a href="">Produtos</a>
-        <a href="">Contato</a>
-      </nav>
+      <hr/>
+      <Menu />
     </header>
   )
 }
