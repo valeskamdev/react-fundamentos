@@ -1,8 +1,22 @@
 import Artigo from './Artigo.jsx';
+import styled from 'styled-components';
+
+const StyledConteudo = styled.main`
+  width: 90vw;
+  margin: 1rem auto;
+  background-color: aliceblue;
+  padding: 10px;
+  box-shadow: 0 0 1px inset darkblue;
+  
+  h2, p {
+    padding: 0.2rem 0;
+  }
+  
+`;
 
 function Conteudo() {
   return(
-    <main>
+    <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
@@ -17,7 +31,7 @@ function Conteudo() {
         <Artigo />
 
       </section>
-    </main>
+    </StyledConteudo>
   )
 }
 
