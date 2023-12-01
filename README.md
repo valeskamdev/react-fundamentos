@@ -21,3 +21,6 @@ index.html (elemento raiz e chamada do script)
 - CSS externo e global usando arquivo.css e importando no main.jsx
 - CSS Module: arquivo CSS especial relacionado ao componente que desejamos estilizar. Normalmente, nomeia-se o arquivo como "NomeComponente.module.css". A vantagem de usar CSS Modules é criar um escopo de estilização evitando conflitos de classes com mesmo nome.
 
+## 05-styled-components
+
+`npm install styled-components`
