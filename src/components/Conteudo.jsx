@@ -11,7 +11,21 @@ const StyledConteudo = styled.main`
   h2, p {
     padding: 0.2rem 0;
   }
-  
+
+  section {
+    div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 650px) {
+      div {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+  }
 `;
 
 function Conteudo() {
@@ -26,9 +40,11 @@ function Conteudo() {
           Commodi cumque eaque earum facere itaque nihil porro?</p>
 
         {/* Reaproveitamento de Componentes */}
-        <Artigo />
-        <Artigo />
-        <Artigo />
+        <div>
+          <Artigo />
+          <Artigo />
+          <Artigo />
+        </div>
 
       </section>
     </StyledConteudo>

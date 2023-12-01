@@ -22,3 +22,13 @@ html {
 body {
   font-family: "Segoe UI", Arial;
 }
+
+#root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
