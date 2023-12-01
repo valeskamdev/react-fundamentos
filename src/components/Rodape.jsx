@@ -1,12 +1,4 @@
-import styled from 'styled-components';
-
-const StyledRodape = styled.footer`
-  background-image: linear-gradient(to right top, #919ff6, #b6a9f7, #d3b5f7, #eac3f8, #fdd2fa);
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+import { StyledRodape } from '../styles/styles.js';
 
 function Rodape() {
   return(
