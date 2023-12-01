@@ -5,6 +5,8 @@
   da aplicação React.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -19,21 +21,29 @@ body, h1, h2, h3, p {
 }
 
 body {
-  font-family: "Segoe UI", "Arial", serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Bloco/Box */
-.sombra {
-  box-shadow: 0 0 10px red;
-  background-color: #fff;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6831c0;
+  align-items: center;
+  padding: 10px;
 }
 
-.destaque-texto {
-  background-color: yellow;
-  padding: 4px;
-  border-radius: 4px;
+h1 {
+  color: #fff;
 }
 
-.centralizar {
-  text-align: center;
+main {
+  flex: 1;
+}
+
+.espacamento {
+  padding: 0 2rem;
 }

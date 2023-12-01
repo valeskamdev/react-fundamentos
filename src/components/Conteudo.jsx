@@ -2,7 +2,7 @@ import Artigo from './Artigo.jsx';
 
 function Conteudo() {
   return(
-    <main>
+    <main className="espacamento">
       <section>
         <h2>Conteúdo da aplicação</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa

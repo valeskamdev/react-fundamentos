@@ -1,12 +1,9 @@
 import Menu from './Menu.jsx';
-import estilos from './Cabecalho.module.css';
 
 function Cabecalho() {
   return(
-    <header>
-      <h1><span className={estilos['destaque-texto']}>Olá</span> <span className={estilos.sombra}>React</span>😃</h1>
-      <hr/>
-      <p className={`${estilos['destaque-texto']} centralizar`}>Fundamentos de React</p>
+    <header className="espacamento">
+      <h1><span>Olá</span> <span>React</span></h1>
       <Menu />
     </header>
   )

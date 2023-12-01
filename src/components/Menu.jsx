@@ -1,9 +1,13 @@
+import './Menu.css';
+
 function Menu() {
   return(
     <nav>
-      <a href="">Home</a>
-      <a href="">Produtos</a>
-      <a href="">Contato</a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Produtos</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
     </nav>
   )
 }
