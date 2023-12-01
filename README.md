@@ -23,4 +23,13 @@ index.html (elemento raiz e chamada do script)
 
 ## 05-styled-components
 
-`npm install styled-components`
+Biblioteca (ou lib) muito comum para estilização CSS in JS de componentes.
+Para instalação, execute: `npm install styled-components`
+Para utilização, crie componentes estilizados usando a sintaxe:
+
+```javascript
+const StyledNome = styled.tag`
+propriedadecss: valorDaPropriedade;
+propriedadecss: valorDaPropriedade;
+`;
+```
