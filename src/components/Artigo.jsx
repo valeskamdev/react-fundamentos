@@ -9,6 +9,9 @@ function Artigo(props) {
       </figure>
       <h3> <span> {props.icone} </span>  { props.titulo } </h3>
       <p> {props.descricao} - <time>Lançamento: {props.data} </time> </p>
+
+      {/* Buscando o conteúdo do componente filho */}
+      { props.children }
     </StyledArtigo>
   )
 }
