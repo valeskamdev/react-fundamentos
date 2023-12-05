@@ -14,12 +14,16 @@ App.jsx (Componente PRINCIPAL)
 main.jsx (Inicialização do React)
 index.html (elemento raiz e chamada do script)
 
+---
+
 ## 04-estilos
 
 ### CSS in JS
 - CSS inline: aplicado via atributo **style** da tag usando sintaxe JS, ou seja, objetos com propriedades.
 - CSS externo e global usando arquivo.css e importando no main.jsx
 - CSS Module: arquivo CSS especial relacionado ao componente que desejamos estilizar. Normalmente, nomeia-se o arquivo como "NomeComponente.module.css". A vantagem de usar CSS Modules é criar um escopo de estilização evitando conflitos de classes com mesmo nome.
+
+---
 
 ## 05-styled-components
 
@@ -33,3 +37,13 @@ propriedadecss: valorDaPropriedade;
 propriedadecss: valorDaPropriedade;
 `;
 ```
+
+---
+
+## 06-props
+
+São parâmetros/argumentos cin valores/expressões React, normalmente usados para injeção de dados dinâmicos. As `props` funcionam como objetos, e cada `prop` criada por você passar a ter propriedades deste objeto.
+
+As `props` são criadas manualmente, embora também exista uma `prop` especial chamada `children` que permite ler/transmitir o conteúdo que fica entre as tags de abertura/fechamento de um componente.
+
+---
