@@ -1,17 +1,18 @@
 import { StyledArtigo } from '../styles/styles.js';
 
+
 // Definindo props para componentes nomeDaFuncao( -> props <- )
-function Artigo(props) {
+function Artigo({ imagem, textoAlternativo, data, icone, titulo, descricao, children }) {
   return(
     <StyledArtigo>
       <figure className="centralizar">
-        <img src={props.imagem} alt={ props.textoAlternativo }/>
+        <img src={ imagem } alt={ textoAlternativo }/>
       </figure>
-      <h3> <span> {props.icone} </span>  { props.titulo } </h3>
-      <p> {props.descricao} - <time>Lançamento: {props.data} </time> </p>
+      <h3> <span> { icone } </span>  { titulo } </h3>
+      <p> { descricao } - <time>Lançamento: { data } </time> </p>
 
       {/* Buscando o conteúdo do componente filho */}
-      { props.children }
+      { children }
     </StyledArtigo>
   )
 }
