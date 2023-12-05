@@ -2,6 +2,7 @@ import Artigo from './Artigo.jsx';
 import { StyledConteudo } from '../styles/styles.js';
 
 function Conteudo() {
+  const dataLancamento = ["02/07/2005", "21/02/2011", "30/11/2014"];
   return(
     <StyledConteudo>
       <section>
@@ -14,9 +15,9 @@ function Conteudo() {
 
         {/* Reaproveitamento de Componentes */}
         <div>
-          <Artigo titulo="Senhor dos Anéis" descricao="Livro criado por Tokien" />
-          <Artigo titulo="Game Of Thrones" descricao="Aventura criada por George R. R. Martin" />
-          <Artigo titulo="HTML5 e CSS3" descricao="Livro de desenvolvimento web" />
+          <Artigo icone ="🧙️" titulo="Senhor dos Anéis" descricao="Livro criado por Tokien" data={dataLancamento[0]} />
+          <Artigo icone ="🎮" titulo="Game Of Thrones" descricao="Aventura criada por George R. R. Martin" data={dataLancamento[1]} />
+          <Artigo icone ="👩‍💻"  titulo="HTML5 e CSS3" descricao="Livro de desenvolvimento web"  data={dataLancamento[2]} />
         </div>
 
       </section>
