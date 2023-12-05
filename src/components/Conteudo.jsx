@@ -15,8 +15,8 @@ function Conteudo() {
           Commodi cumque eaque earum facere itaque nihil porro?</p>
 
         <StyledSection>
-          {cursos.map(({ titulo, categoria, preco, id }) => (
-            <Artigo titulo={titulo} categoria={categoria} preco={preco} key={id}></Artigo>
+          { cursos.map(({ titulo, categoria, preco, id }) => (
+            <Artigo titulo={titulo} categoria={categoria} preco={preco} key={id} />
           ))}
         </StyledSection>
 
