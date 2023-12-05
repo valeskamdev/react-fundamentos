@@ -1,4 +1,4 @@
-import { StyledConteudo } from '../styles/styles.js';
+import { StyledConteudo, StyledSection } from '../styles/styles.js';
 import Artigo from './Artigo.jsx';
 import cursos from '../../modules/cursos.js';
 
@@ -14,11 +14,11 @@ function Conteudo() {
           saepe sed voluptatum.
           Commodi cumque eaque earum facere itaque nihil porro?</p>
 
-        <section>
+        <StyledSection>
           {cursos.map(({ titulo, categoria, preco, id }) => (
             <Artigo titulo={titulo} categoria={categoria} preco={preco} key={id}></Artigo>
           ))}
-        </section>
+        </StyledSection>
 
       </section>
     </StyledConteudo>

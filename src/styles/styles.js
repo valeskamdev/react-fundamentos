@@ -61,8 +61,9 @@ const StyledConteudo = styled.main`
 `;
 
 const StyledArtigo = styled.article`
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  background-color: #EAC3F8FF;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 10px;
+  background-color: rgba(234, 195, 248, 0.56);
   padding: 1rem;
   margin: 0.5rem 0;
 
@@ -75,10 +76,21 @@ const StyledArtigo = styled.article`
   p {
     font-size: 1.1rem;
   }
-  
+
   .centralizar {
     text-align: center;
   }
 `;
 
-export { StyledRodape, StyledMenu, StyledConteudo, StyledArtigo }
+const StyledSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+`;
+
+export { StyledRodape, StyledMenu, StyledConteudo, StyledArtigo, StyledSection }
