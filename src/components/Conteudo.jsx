@@ -20,9 +20,40 @@ function Conteudo() {
 
         {/* Reaproveitamento de Componentes */}
         <div>
-          <Artigo imagem={imagem1} textoAlternativo="Livro aberto." icone ="🧙️" titulo="Senhor dos Anéis" descricao="Livro criado por Tokien" data={dataLancamento[0]} />
-          <Artigo imagem={imagem2}  textoAlternativo="Pilha de livros." icone ="🎮" titulo="Game Of Thrones" descricao="Aventura criada por George R. R. Martin" data={dataLancamento[1]} />
-          <Artigo imagem={imagem3}  textoAlternativo="Livro aberto saindo estrelas." icone ="👩‍💻"  titulo="HTML5 e CSS3" descricao="Livro de desenvolvimento web"  data={dataLancamento[2]} />
+          <Artigo imagem={imagem1} textoAlternativo="Livro aberto." icone ="🧙️" titulo="Senhor dos Anéis" descricao="Livro criado por Tokien" data={dataLancamento[0]} >
+            <h4>Volumes</h4>
+
+            <ul>
+              <li>A Sociedade do Anél</li>
+              <li>As Duas Torres</li>
+              <li>O retorno do Rei</li>
+            </ul>
+          </Artigo>
+          <Artigo imagem={imagem2}  textoAlternativo="Pilha de livros." icone ="🎮" titulo="Game Of Thrones" descricao="Aventura criada por George R. R. Martin" data={dataLancamento[1]} >
+            <h4>Defuntos do livro</h4>
+
+            <ol>
+              <li>Eddard Stark</li>
+              <li>Catelyn Stark</li>
+              <li>Robb Stark</li>
+              <li>Jon Snow</li>
+            </ol>
+          </Artigo>
+          <Artigo imagem={imagem3}  textoAlternativo="Livro aberto saindo estrelas." icone ="👩‍💻"  titulo="HTML5 e CSS3" descricao="Livro de desenvolvimento web"  data={dataLancamento[2]} >
+            <section>
+              <h4>Assuntos</h4>
+
+              <details>
+                <summary>Estrutura</summary>
+                <p>Tags de estruturação de página</p>
+              </details>
+
+              <details>
+                <summary>Estilização</summary>
+                <p>Tags de estilização de página</p>
+              </details>
+            </section>
+          </Artigo>
         </div>
 
       </section>
