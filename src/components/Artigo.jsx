@@ -1,9 +1,13 @@
 import { StyledArtigo } from '../styles/styles.js';
-function Artigo() {
+
+// Definindo props para componentes nomeDaFuncao( -> props <- )
+function Artigo(props) {
   return(
     <StyledArtigo>
-      <h3>Artigo 1</h3>
-      <p>Conteúdo do artigo 1...</p>
+      {/* eslint-disable-next-line react/prop-types */}
+      <h3> { props.titulo } </h3>
+      {/* eslint-disable-next-line react/prop-types */}
+      <p> {props.descricao} </p>
     </StyledArtigo>
   )
 }

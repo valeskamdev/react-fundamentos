@@ -14,9 +14,9 @@ function Conteudo() {
 
         {/* Reaproveitamento de Componentes */}
         <div>
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo titulo="Senhor dos Anéis" descricao="Livro criado por Tokien" />
+          <Artigo titulo="Game Of Thrones" descricao="Aventura criada por George R. R. Martin" />
+          <Artigo titulo="HTML5 e CSS3" descricao="Livro de desenvolvimento web" />
         </div>
 
       </section>
