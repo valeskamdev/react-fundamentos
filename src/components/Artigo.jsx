@@ -4,9 +4,10 @@ import { StyledArtigo } from '../styles/styles.js';
 function Artigo(props) {
   return(
     <StyledArtigo>
-      {/* eslint-disable-next-line react/prop-types */}
+      <figure className="centralizar">
+        <img src={props.imagem} alt={ props.textoAlternativo }/>
+      </figure>
       <h3> <span> {props.icone} </span>  { props.titulo } </h3>
-      {/* eslint-disable-next-line react/prop-types */}
       <p> {props.descricao} - <time>Lançamento: {props.data} </time> </p>
     </StyledArtigo>
   )

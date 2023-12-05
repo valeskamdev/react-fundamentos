@@ -75,6 +75,10 @@ const StyledArtigo = styled.article`
   p {
     font-size: 1.1rem;
   }
+  
+  .centralizar {
+    text-align: center;
+  }
 `;
 
 export { StyledRodape, StyledMenu, StyledConteudo, StyledArtigo }
