@@ -2,17 +2,14 @@ import { StyledArtigo } from '../styles/styles.js';
 
 
 // Definindo props para componentes nomeDaFuncao( -> props <- )
-function Artigo({ imagem, textoAlternativo, data, icone, titulo, descricao, children }) {
+function Artigo({ titulo, categoria, preco }) {
+  const precoFormatado = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(preco);
+
   return(
     <StyledArtigo>
-      <figure className="centralizar">
-        <img src={ imagem } alt={ textoAlternativo }/>
-      </figure>
-      <h3> <span> { icone } </span>  { titulo } </h3>
-      <p> { descricao } - <time>Lançamento: { data } </time> </p>
-
-      {/* Buscando o conteúdo do componente filho */}
-      { children }
+      <h3>{ categoria }</h3>
+      <p><b>Curso: </b>{ titulo }</p>
+      <p><b>Preço: </b> { precoFormatado }</p>
     </StyledArtigo>
   )
 }
