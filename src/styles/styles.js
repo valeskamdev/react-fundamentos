@@ -79,7 +79,7 @@ const StyledConteudo = styled.main`
 const StyledArtigo = styled.article`
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   border-radius: 10px;
-  background-color: rgba(234, 195, 248, 0.56);
+  //background-color: rgba(234, 195, 248, 0.56);
   padding: 1rem;
   margin: 0.5rem 0;
 
