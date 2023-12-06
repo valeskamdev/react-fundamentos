@@ -10,7 +10,11 @@ function Conteudo() {
     acionado por um componente/elemento.
    */
   const exemplo2 = () => {
-    alert("Exemplo2");
+    alert("Exemplo 2");
+  }
+
+  const exemplo3 = (value) => {
+    alert("Exemplo 3 " + value);
   }
 
   return(
@@ -20,6 +24,9 @@ function Conteudo() {
 
         <button onClick={exemplo2}>Exemplo 2</button>
 
+        {/* Acionando o evento/função através do Conteudo pai*/}
+        <button onClick={exemplo3}>Exemplo 3 (pai)</button>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
           cumque, cupiditate
           explicabo facilis id laboriosam molestias mollitia pariatur quasi
@@ -28,7 +35,17 @@ function Conteudo() {
 
         <StyledSection>
           { cursos.map(({ titulo, categoria, preco, id }) => (
-            <Artigo titulo={titulo} categoria={categoria} preco={preco} key={id} />
+            <Artigo
+              /*
+                É necessário criar uma prop para passar a
+                chamada/referência da função do componte pai
+               */
+              // handleClick={}
+              aoClicar={ () => { exemplo3(categoria) } }
+              titulo={titulo}
+              categoria={categoria}
+              preco={preco}
+              key={id} />
           ))}
         </StyledSection>
 
