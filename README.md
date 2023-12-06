@@ -47,3 +47,18 @@ São parâmetros/argumentos cin valores/expressões React, normalmente usados pa
 As `props` são criadas manualmente, embora também exista uma `prop` especial chamada `children` que permite ler/transmitir o conteúdo que fica entre as tags de abertura/fechamento de um componente.
 
 ---
+
+## 09-gerenciamento-de-estados-dos-componentes
+
+`Estados` ou `State` é uma propriedade especial de um componente que pode ser alterada ao longo do tempo. Por exemplo, um componente que exibe um contador de **likes** precisa de um gerenciamento de `states` para controlar a quantidade de **likes** recebidos.
+
+O uso de `states` permite ao React ao React reagir ás mudanças de renderização dos componentes.
+
+## Exemplos de mundanças que podem ser gerenciadas por states
+
+- Captura de dados de formulário
+- Visibilidade de compontentes
+- Filtros e buscas de dados
+- Temas/estilos
+- Pontuação/vida de um jogador
+---
