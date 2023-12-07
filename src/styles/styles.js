@@ -49,7 +49,7 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const StyledConteudo = styled.main`
+const StyledCursos = styled.section`
   section {
     div:not(.filtros) {
       display: grid;
@@ -111,4 +111,4 @@ const StyledSection = styled.section`
   }
 `;
 
-export { StyledRodape, StyledMenu, StyledConteudo, StyledArtigo, StyledSection, StyledCabecalho }
+export { StyledRodape, StyledMenu, StyledCursos, StyledArtigo, StyledSection, StyledCabecalho }

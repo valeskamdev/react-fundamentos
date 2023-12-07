@@ -1,5 +1,6 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Cabecalho from './components/Cabecalho.jsx';
-import Conteudo from './components/Conteudo.jsx';
 import Rodape from './components/Rodape.jsx';
 import Home from './pages/Home.jsx';
 import Produtos from './pages/Produtos.jsx';
@@ -8,13 +9,17 @@ import Container from './components/Container.jsx';
 
 function App() {
   return <>
-    <Cabecalho />
-    <Container>
-      <Home />
-      <Produtos />
-      <Contato />
-    </Container>
-    <Rodape />
+    <BrowserRouter>
+      <Cabecalho/>
+      <Container>
+        <Routes>
+         <Route Component={ Home } exact path="/" />
+         <Route Component={ Produtos } exact path="/produtos" />
+         <Route Component={ Contato } exact path="/contato" />
+        </Routes>
+      </Container>
+      <Rodape/>
+    </BrowserRouter>
   </>;
 }
 
