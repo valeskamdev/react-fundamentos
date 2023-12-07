@@ -62,3 +62,13 @@ O uso de `states` permite ao React ao React reagir ás mudanças de renderizaç�
 - Temas/estilos
 - Pontuação/vida de um jogador
 ---
+
+## 11-navegacao-usando rotas
+
+O React suporta a navegação/links como Single Page Application (SPA) usando uma biblioteca adicional chamada **React Router DOM**.
+
+Portanto, é necessário instalar esta dependência:
+
+`npm install react-router-dom`
+
+---
