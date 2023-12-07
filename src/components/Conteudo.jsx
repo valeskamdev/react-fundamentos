@@ -18,8 +18,10 @@ function Conteudo() {
   }
 
   const limparFiltro = (event) => setCategoria(null);
-
   const cursosFiltrados = cursos.filter(curso => curso.categoria === categoria || categoria === null);
+
+  // Guardando a quantidade de cursos filtrados
+  const quantidadeCursos = cursosFiltrados.length;
 
   return(
     <StyledConteudo>
@@ -42,12 +44,21 @@ function Conteudo() {
             {/*{ categoria && <button onClick={ limparFiltro }>🧹 Limpar Filtro</button> }*/}
             { categoria && <button onClick={ () => setCategoria(null) }>🧹 Limpar Filtro</button> }
           </p>
+          <p>Quantidade de cursos: <b>{ quantidadeCursos }</b></p>
           {/*
             Rederização Condicional
             O texto/tag/componente somente será rederizado/exibindo
             se o state categoria existir (ou seja, não é null, undefined, false)
           */}
           { categoria && (<p>Mostrando cursos de: {categoria}</p>) }
+          {
+            /*
+              Se quantidade for zerro (ou seja, não tem cursos da
+              categoria diltrada), então mostre a mensagem
+            */
+            quantidadeCursos === 0 &&
+            <p style={{ color: 'red', textAlign: 'center' }}>Não há cursos desta categoria!</p>
+          }
         </div>
 
         <StyledSection>
