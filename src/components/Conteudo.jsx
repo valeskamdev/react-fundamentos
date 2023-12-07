@@ -16,6 +16,11 @@ function Conteudo() {
     // E em seguida passamos este texto para o state de categoria
     setCategoria(categoriaEscolhida);
   }
+
+  const limparFiltro = (event) => setCategoria(null);
+
+  const cursosFiltrados = cursos.filter(curso => curso.categoria === categoria || categoria === null);
+
   return(
     <StyledConteudo>
       <section>
@@ -31,6 +36,11 @@ function Conteudo() {
             <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Front-End</button>
             <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Back-End</button>
             <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Design</button>
+            <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Programação</button>
+            <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Mobile</button>
+            <b>Filtrar por: </b><button onClick={ aplicarFiltro }>Música</button>
+            {/*{ categoria && <button onClick={ limparFiltro }>🧹 Limpar Filtro</button> }*/}
+            { categoria && <button onClick={ () => setCategoria(null) }>🧹 Limpar Filtro</button> }
           </p>
           {/*
             Rederização Condicional
@@ -41,7 +51,7 @@ function Conteudo() {
         </div>
 
         <StyledSection>
-          { cursos.map(({ titulo, categoria, preco, id }) => (
+          { cursosFiltrados.map(({ titulo, categoria, preco, id }) => (
             <Artigo titulo={titulo} categoria={categoria} preco={preco} key={id} />
           ))}
         </StyledSection>
