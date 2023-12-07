@@ -3,7 +3,9 @@ import Artigo from './Artigo.jsx';
 import cursos from '../../modules/cursos.js';
 
 function Conteudo() {
-  const dataLancamento = ["02/07/2005", "21/02/2011", "30/11/2014"];
+  const aplicarFiltro = (event) => {
+    console.log(event.currentTarget.innerText);
+  }
   return(
     <StyledConteudo>
       <section>
@@ -13,6 +15,12 @@ function Conteudo() {
           explicabo facilis id laboriosam molestias mollitia pariatur quasi
           saepe sed voluptatum.
           Commodi cumque eaque earum facere itaque nihil porro?</p>
+
+        <div className="filtros">
+          <p><b>Filtrar por: </b><button onClick={ aplicarFiltro }>Front-End</button></p>
+          <p><b>Filtrar por: </b><button onClick={ aplicarFiltro }>Back-End</button></p>
+          <p><b>Filtrar por: </b><button onClick={ aplicarFiltro }>Design</button></p>
+        </div>
 
         <StyledSection>
           { cursos.map(({ titulo, categoria, preco, id }) => (
