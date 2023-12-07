@@ -59,9 +59,9 @@ const StyledConteudo = styled.main`
   h2, p {
     padding: 0.2rem 0;
   }
-
+  
   section {
-    div {
+    div:not(.filtros) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
