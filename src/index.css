@@ -22,25 +22,3 @@ html {
 body {
   font-family: "Segoe UI", Arial;
 }
-
-#root {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-.filtros {
-  margin: 1rem 0;
-  padding: 1rem 0;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-}
-
-.filtros button {
-  margin: 0.5rem;
-  font-size: 1.1rem;
-}

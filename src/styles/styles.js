@@ -50,16 +50,6 @@ const StyledMenu = styled.nav`
 `;
 
 const StyledConteudo = styled.main`
-  width: 90vw;
-  margin: 1rem auto;
-  background-color: aliceblue;
-  padding: 10px;
-  box-shadow: 0 0 1px inset darkblue;
-  
-  h2, p {
-    padding: 0.2rem 0;
-  }
-  
   section {
     div:not(.filtros) {
       display: grid;
@@ -73,6 +63,18 @@ const StyledConteudo = styled.main`
         gap: 0;
       }
     }
+  }
+
+  .filtros {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  .filtros button {
+    margin: 0.5rem;
+    font-size: 1.1rem;
   }
 `;
 
