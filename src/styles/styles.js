@@ -47,6 +47,10 @@ const StyledMenu = styled.nav`
       transform: scale(1.05);
     }
   }
+  
+  .active {
+    background-color: hotpink;
+  }
 `;
 
 const StyledCursos = styled.section`
