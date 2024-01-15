@@ -15,6 +15,8 @@ function Produtos() {
       const resposta = await fetch(`https://fakestoreapi.com/products`);
       const dados = await resposta.json();
       console.log(dados);
+
+      setProdutos(dados);
     } catch (e) {
       console.error('Houve um erro: ' + e);
 
