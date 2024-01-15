@@ -39,7 +39,21 @@ function Produtos() {
     carregarDados();
   }, []);
 
-  return <h2>Produtos</h2>
+  return (
+      <article>
+        <h2>Produtos</h2>
+        {produtos.map(({id, title, description, image, price}) => {
+          return (
+              <section key={id}>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <img src={image} alt={title} />
+                <p>R$ {price}</p>
+              </section>
+          );
+        })}
+      </article>
+  );
 }
 
 export default Produtos;
